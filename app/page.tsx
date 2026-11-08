@@ -14,10 +14,16 @@ const fields = [
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#050806] text-white">
+
       <nav className="sticky top-0 z-50 border-b border-white/10 bg-[#050806]/90 px-6 py-5 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <a href="#" className="text-2xl font-black tracking-wider">
-            RAYAN<span className="text-green-400">.</span>
+
+          <a href="#" className="flex items-center">
+            <img
+              src="/logo.png"
+              alt="RAYAN SOFTWARE"
+              className="h-14 w-auto object-contain"
+            />
           </a>
 
           <div className="hidden gap-7 text-sm text-gray-400 md:flex">
@@ -171,10 +177,6 @@ export default function Home() {
             <a href="https://github.com/rayanazouz2011-coder" target="_blank" rel="noreferrer" className="rounded-xl bg-green-400 px-8 py-4 font-bold text-black transition hover:bg-green-300">
               GitHub ↗
             </a>
-
-            <a href="https://wa.me/201017072667" target="_blank" rel="noreferrer" className="rounded-xl border border-white/20 px-8 py-4 font-bold transition hover:border-green-400">
-              WhatsApp ↗
-            </a>
           </div>
         </div>
       </section>
@@ -182,6 +184,7 @@ export default function Home() {
       <footer className="border-t border-white/10 px-6 py-8 text-center text-sm text-gray-500">
         © 2026 RAYAN SOFTWARE. All rights reserved.
       </footer>
+
     </main>
   );
 }
